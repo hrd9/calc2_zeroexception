@@ -1,5 +1,5 @@
 # Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/hrd9/calc2.svg?branch=main)](https://app.travis-ci.com/hrd9/calc2)
+[![Build Status](https://app.travis-ci.com/hrd9/calc2.svg?branch=main)](https://app.travis-ci.com/github/hrd9/calc2_zeroexception)
 
 Run Pip Install
 pip install -r requirements.txt
