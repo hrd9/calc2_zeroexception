@@ -1,5 +1,6 @@
-# Calculator Project Setup
-[![Build Status](https://app.travis-ci.com/hrd9/calc2_zeroexception.svg?branch=main)](https://app.travis-ci.com/hrd9/calc2_zeroexception)
+# Calculator Working 
+
+[![Build Status](https://app.travis-ci.com/hrd9/calc3_part.svg?branch=main)](https://app.travis-ci.com/hrd9/calc3_part)
 
 Run Pip Install
 pip install -r requirements.txt
