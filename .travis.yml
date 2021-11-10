@@ -9,4 +9,4 @@ script:
 
 branches:
   only:
-    - calc2_part4
+    - calculator_part4
