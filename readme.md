@@ -1,4 +1,4 @@
-# Calculator Project Setup
+# Calculator Part 2 : Divide by zero exception assignment
 [![Build Status](https://app.travis-ci.com/hrd9/calc2_zeroexception.svg?branch=main)](https://app.travis-ci.com/hrd9/calc2_zeroexception)
 
 Run Pip Install
