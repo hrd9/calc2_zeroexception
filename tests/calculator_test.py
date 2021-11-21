@@ -5,6 +5,7 @@ from calc.history.calculations import Calculations
 from calc.calculations.addition import Addition
 from calc.calculations.multiplication import Multiplication
 from calc.calculations.subtraction import Subtraction
+from calc.calculations.division import Division
 
 @pytest.fixture
 def clear_history_fixture():
@@ -34,9 +35,16 @@ def test_calculator_subtract_static(clear_history_fixture):
     assert calculation_result_object.get_result() == -6.0
 
 def test_calculator_multiply_static(clear_history_fixture):
-    """Testing the subtract method of the calc"""
+    """Testing the mulitply method of the calc"""
     # pylint: disable=unused-argument,redefined-outer-name
     #using Tuple instead of args because we can pack as much data as we need into the tuple
     my_tuple = (1.0,2.0,3.0)
     assert isinstance(Calculator.multiply_numbers(my_tuple), Multiplication)
     assert Calculator.get_last_result_value() == 6.0
+
+def test_calculator_divide_static(clear_history_fixture):
+    """Testing the division method of the calc"""
+    # pylint: disable=unused-argument,redefined-outer-name
+    my_tuple = (1.0,2.0)
+    assert isinstance(Calculator.divide_numbers(my_tuple), Division)
+    assert Calculator.get_last_result_value() == 0.5

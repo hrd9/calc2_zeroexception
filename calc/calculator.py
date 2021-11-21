@@ -10,6 +10,7 @@ class Calculator:
         """ This is the gets the result of the calculation"""
         # I made this method so that I don't have more than one action per function
         return Calculations.get_last_calculation_result_value()
+
     @staticmethod
     #tuple allows me to pass in as many values as a I want
     def add_numbers(tuple_values: tuple):
@@ -29,4 +30,4 @@ class Calculator:
     @staticmethod
     def divide_numbers(tuple_values: tuple):
         """Dividing the number from the result and returning its object"""
-        return Calculations.add_divison_calculation(tuple_values)
+        return Calculations.add_division_calculation(tuple_values)

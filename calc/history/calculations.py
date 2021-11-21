@@ -26,10 +26,6 @@ class Calculations:
         calculation = Calculations.get_last_calculation_object()
         return calculation.get_result()
     @staticmethod
-    def get_first_calculation():
-        """get first calculation"""
-        return Calculations.history[0]
-    @staticmethod
     def get_calculation(num):
         """ get a specific calculation from history"""
         return Calculations.history[num]
@@ -48,13 +44,14 @@ class Calculations:
         """create a subtraction object to history using factory method create"""
         Calculations.add_calculation(Subtraction.create(values))
         return Calculations.get_last_calculation_object()
+
     @staticmethod
     def add_multiplication_calculation(values):
         """Add a multiplication object to history using factory method create"""
         Calculations.add_calculation(Multiplication.create(values))
         return Calculations.get_last_calculation_object()
     @staticmethod
-    def add_divison_calculation(values):
+    def add_division_calculation(values):
         """Adding a division onject to the history"""
         Calculations.add_calculation(Division.create(values))
         return Calculations.get_last_calculation_object()
